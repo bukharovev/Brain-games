@@ -1,22 +1,24 @@
 {
-  "name": "brain-games",
+  "name": "brain-games-by-bukharovev",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "bin" : {
-	"brain-games" : "./brain-games.js"
-},
+  "description": "Study project",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "NODE_ENV=production babel src --out-dir dist --source-maps inline",
     "prepublishOnly": "npm run build"
   },
-  "author": "",
+  "author": "Evgeny Bukharov",
   "license": "ISC",
   "devDependencies": {
-	"@babel/core":,
-	"@babel/cli":, 
-	"@babel/node":,
-	"@babel/present-end":
-}
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1"
+  },
+  "bin": {
+    "brain-games": "dist/bin/brain-games.js"
+  },
+  "files": [
+    "dist"
+  ]
 }
