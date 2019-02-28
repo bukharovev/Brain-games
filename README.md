@@ -1,5 +1,4 @@
 # project-lvl1-s454
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/test_coverage"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage" /></a>
-[![Build Status](https://travis-ci.org/travis-ci/travis-web.svg?branch=master)](https://travis-ci.org/travis-ci/travis-web)
+[![Maintainability](https://api.codeclimate.com/v1/badges/df4a66e5cca0712c8929/maintainability)](https://codeclimate.com/github/bukharovev/project-lvl1-s454/maintainability)
+[![Build Status](https://travis-ci.org/bukharovev/project-lvl1-s454.svg?branch=master)](https://travis-ci.org/bukharovev/project-lvl1-s454)
 

@@ -5,4 +5,4 @@ start:
 publish:
 	npm publish
 make lint:
-	npx eslint
+	npx eslint /home/evgeny/brain-games
