@@ -4,18 +4,19 @@ import random from '../utils';
 export default () => {
   const task = 'What number is missing in the progression?\n';
   const gameSettings = () => {
-    const missingDigit = random(2, 9);
+    const length = 10;
+    const hiddenElementPosition = random(1, length);
     const stepOfProgression = random(1, 6);
-    let beginProgression = random(1, 10);
-    const numberOfProgressions = 10;
-    const rightAnswer = ((missingDigit + 1) * stepOfProgression) + beginProgression;
+    const firstElement = random(1, 10);
+    const rightAnswer = ((hiddenElementPosition + 1) * stepOfProgression) + firstElement;
     let question = '';
-    for (let i = 0; i < numberOfProgressions; i += 1) {
-      if (i === missingDigit) {
+    for (let i = 0; i < length; i += 1) {
+      let j = i; // Не знал как назвать 'j'. Она нужна для того, чтобы спрятать элемент
+      if (i === hiddenElementPosition) {
         question = `${question} .. `;
-        beginProgression += stepOfProgression;
+        j += 1;
       } else {
-        question = `${question} ${beginProgression += stepOfProgression} `;
+        question = `${question} ${((j + 1) * stepOfProgression) + firstElement} `;
       }
     }
     return { question, rightAnswer };

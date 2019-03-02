@@ -13,7 +13,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const task = 'Answer "yes" if number is prime otherwise answer "no"';
+const task = 'Answer "yes" if number is prime otherwise answer "no"\n';
 export default () => {
   const gameSettings = () => {
     const num = random(1, 100);
