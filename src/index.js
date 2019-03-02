@@ -10,7 +10,7 @@ export default (task, gameSettings) => {
     const { question, rightAnswer } = gameSettings();
     console.log(question);
     const answer = readlineSync.question('Your answer: ');
-    if (answer === rightAnswer) {
+    if (answer === String(rightAnswer)) {
       console.log('Correct!');
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}\n`);

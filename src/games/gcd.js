@@ -9,7 +9,7 @@ const gcd = () => {
     const firstOperand = random(1, 30);
     const secondOperand = random(1, 100);
     const question = `${firstOperand}  ${secondOperand}`;
-    const rightAnswer = String(searchGcd(firstOperand, secondOperand));
+    const rightAnswer = searchGcd(firstOperand, secondOperand);
     return { question, rightAnswer };
   };
   toPlay(task, gameSettings);
