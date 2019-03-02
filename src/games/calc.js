@@ -19,11 +19,9 @@ const calc = () => {
         question = `${firstOperand} - ${secondOperand}`;
         rightAnswer = String(firstOperand - secondOperand);
         break;
-      case '3':
+      default:
         question = `${firstOperand} * ${secondOperand}`;
         rightAnswer = String(firstOperand * secondOperand);
-        break;
-      default:
         break;
     }
     return { question, rightAnswer };
