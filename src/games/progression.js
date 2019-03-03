@@ -8,15 +8,14 @@ export default () => {
     const hiddenElementPosition = random(0, length - 1);
     const stepOfProgression = random(1, 6);
     const firstElement = random(1, 10);
-    const rightAnswer = ((hiddenElementPosition + 1) * stepOfProgression) + firstElement;
+    const rightAnswer = ((hiddenElementPosition) * stepOfProgression) + firstElement;
     let question = '';
     for (let i = 0; i < length; i += 1) {
-      let j = i; // Не знал как назвать 'j'. Она нужна для того, чтобы спрятать элемент
       if (i === hiddenElementPosition) {
-        question = `${question} .. `;
-        j += 1;
+        question = `${question}.. ${(i + 1) * stepOfProgression + firstElement} `;
+        i += 1;
       } else {
-        question = `${question} ${((j + 1) * stepOfProgression) + firstElement} `;
+        question = `${question} ${i * stepOfProgression + firstElement} `;
       }
     }
     return { question, rightAnswer };
