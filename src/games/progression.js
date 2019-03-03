@@ -1,11 +1,11 @@
 import toPlay from '..';
 import random from '../utils';
 
+const length = 10;
 export default () => {
-  const task = 'What number is missing in the progression?\n';
+  const task = 'What number is missing in the progression?';
   const gameSettings = () => {
-    const length = 10;
-    const hiddenElementPosition = random(1, length);
+    const hiddenElementPosition = random(0, length - 1);
     const stepOfProgression = random(1, 6);
     const firstElement = random(1, 10);
     const rightAnswer = ((hiddenElementPosition + 1) * stepOfProgression) + firstElement;
