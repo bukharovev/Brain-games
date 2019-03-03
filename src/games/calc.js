@@ -13,15 +13,15 @@ const calc = () => {
     switch (numOfOperation) {
       case '1':
         question = `${firstOperand} + ${secondOperand}`;
-        rightAnswer = firstOperand + secondOperand;
+        rightAnswer = String(firstOperand + secondOperand);
         break;
       case '2':
         question = `${firstOperand} - ${secondOperand}`;
-        rightAnswer = firstOperand - secondOperand;
+        rightAnswer = String(firstOperand - secondOperand);
         break;
       default:
         question = `${firstOperand} * ${secondOperand}`;
-        rightAnswer = firstOperand * secondOperand;
+        rightAnswer = String(firstOperand * secondOperand);
         break;
     }
     return { question, rightAnswer };
