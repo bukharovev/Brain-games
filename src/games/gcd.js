@@ -1,7 +1,7 @@
 import toPlay from '..';
 import random from '../utils';
 
-const task = 'Find the greatest common divisor of given numbers.\n';
+const task = 'Find the greatest common divisor of given numbers.';
 
 const searchGcd = (a, b) => (b === 0 ? a : searchGcd(b, (a % b)));
 const gcd = () => {

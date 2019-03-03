@@ -4,6 +4,7 @@ const rounds = 3;
 export default (task, gameSettings) => {
   console.log('Welcome to the Brain Games!');
   console.log(task);
+  console.log('');
   const userName = readlineSync.question('May i have your name? ');
   console.log(`Hello, ${userName}!`);
   for (let i = 0; i < rounds; i += 1) {

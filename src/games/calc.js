@@ -1,7 +1,7 @@
 import toPlay from '..';
 import random from '../utils';
 
-const task = 'What is the result of the expression\n';
+const task = 'What is the result of the expression';
 
 const calc = () => {
   const gameSettings = () => {
