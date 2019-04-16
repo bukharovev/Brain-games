@@ -4,7 +4,7 @@
 
 brain-even: <https://asciinema.org/a/F61X2DtIrLCeDckRHy1RquQcI>
 
-brain-calc: https://asciinema.org/a/KaT0QvumuSVwcRSGcMvRNg5aW
+brain-calc: <https://asciinema.org/a/KaT0QvumuSVwcRSGcMvRNg5aW>
 
 brain-gcd: https://asciinema.org/a/VWVhXA7IlLWEzPUPru63RC6UL
 
